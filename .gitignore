@@ -70,3 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Packages/PolygonNatureBiomes/URP_ExtractMe/Unity_2021.unitypackage.meta
+Assets/Packages/PolygonNatureBiomes/URP_ExtractMe/Unity_2022.unitypackage.meta
+ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
