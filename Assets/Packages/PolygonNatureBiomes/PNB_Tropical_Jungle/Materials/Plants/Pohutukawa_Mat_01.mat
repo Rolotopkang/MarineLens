@@ -208,6 +208,7 @@ Material:
     - _FrostingFalloff: 1.4
     - _FrostingHeight: 3.49
     - _FrostingSwitch: 1
+    - _FrostingWorldObjectSwitch2: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
