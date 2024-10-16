@@ -73,8 +73,8 @@ MonoBehaviour:
   m_Active: 1
   resources: {fileID: 11400000, guid: 4eff212383c9f5945ae947b357c76582, type: 2}
   settings:
-    allowBlur: 1
-    allowDistortion: 1
+    allowBlur: 0
+    allowDistortion: 0
     distortionMode: 1
     directionalCaustics: 0
     accurateDirectionalCaustics: 0
