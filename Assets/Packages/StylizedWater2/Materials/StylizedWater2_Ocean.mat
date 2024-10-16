@@ -13,6 +13,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ADVANCED_SHADING
+  - _CAUSTICS
   - _DISTANCE_NORMALS
   - _FOAM
   - _NORMALMAP
@@ -56,7 +57,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CausticsTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 322b6bd662eaca34a861d5fb347b5552, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DepthTex:
@@ -142,12 +143,12 @@ Material:
     - _Blend: 0
     - _BumpScale: 1
     - _CROSSPAN_INTERSECTIONOn: 1
-    - _CausticsBrightness: 2
-    - _CausticsChromance: 1
+    - _CausticsBrightness: 1.5
+    - _CausticsChromance: 0.597
     - _CausticsDistortion: 0.23
-    - _CausticsOn: 0
+    - _CausticsOn: 1
     - _CausticsSpeed: 0.1
-    - _CausticsTiling: 0.5
+    - _CausticsTiling: 0.1
     - _ColorAbsorption: 0
     - _CrossPan_IntersectionOn: 0
     - _Cull: 0
@@ -275,7 +276,7 @@ Material:
     - _TranslucencyStrength: 2
     - _TranslucencyStrengthDirect: 0.019
     - _UnderwaterRefractionOffset: 0.2
-    - _UnderwaterSurfaceSmoothness: 0.8
+    - _UnderwaterSurfaceSmoothness: 1
     - _VertexColorDepth: 0
     - _VertexColorFoam: 0
     - _VertexColorWaveFlattening: 0
