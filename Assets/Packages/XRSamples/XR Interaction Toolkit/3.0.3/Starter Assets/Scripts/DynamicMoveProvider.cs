@@ -22,11 +22,15 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             /// Use the forward direction of the head (camera) as the forward direction of the XR Origin's movement.
             /// </summary>
             HeadRelative,
+            
+            TransformRelative,
 
             /// <summary>
             /// Use the forward direction of the hand (controller) as the forward direction of the XR Origin's movement.
             /// </summary>
-            HandRelative,
+            RightHandRelative,
+            
+            LeftHandRelative,
         }
 
         [Space, Header("Movement Direction")]
@@ -140,10 +144,21 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
                     break;
 
-                case MovementDirection.HandRelative:
+                case MovementDirection.RightHandRelative:
+                    if (m_LeftControllerTransform != null)
+                        m_LeftMovementPose = m_RightControllerTransform.GetWorldPose();
+
+                    break;
+                
+                case MovementDirection.LeftHandRelative:
                     if (m_LeftControllerTransform != null)
                         m_LeftMovementPose = m_LeftControllerTransform.GetWorldPose();
 
+                    break;
+                
+                case MovementDirection.TransformRelative:
+                    if (m_LeftControllerTransform != null)
+                        m_LeftMovementPose = mediator.xrOrigin.transform.GetWorldPose();
                     break;
 
                 default:
@@ -160,12 +175,21 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
                     break;
 
-                case MovementDirection.HandRelative:
+                case MovementDirection.RightHandRelative:
                     if (m_RightControllerTransform != null)
                         m_RightMovementPose = m_RightControllerTransform.GetWorldPose();
+                    break;
+                    
+                case MovementDirection.LeftHandRelative:
+                    if (m_RightControllerTransform != null)
+                        m_RightMovementPose = m_LeftControllerTransform.GetWorldPose();
 
                     break;
 
+                case MovementDirection.TransformRelative:
+                    if (m_RightControllerTransform != null)
+                        m_RightMovementPose = mediator.xrOrigin.transform.GetWorldPose();
+                    break;
                 default:
                     Assert.IsTrue(false, $"Unhandled {nameof(MovementDirection)}={m_RightHandMovementDirection}");
                     break;
