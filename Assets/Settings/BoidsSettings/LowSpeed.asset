@@ -10,17 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6194ee95dedb4d71a8fe738abba0f47, type: 3}
-  m_Name: Settings
+  m_Name: LowSpeed
   m_EditorClassIdentifier: 
-  minSpeed: 2
-  maxSpeed: 4
-  panicMaxSpeed: 15
+  minSpeed: 1
+  maxSpeed: 5.12
+  panicMaxSpeed: 5
   panicTime: 1
   perceptionRadius: 2.5
   avoidanceRadius: 1
-  maxSteerForce: 8
+  maxSteerForce: 3
+  avoidMovingCollisionWeight: 800
+  movingCollisionAvoidDst: 4
   alignWeight: 2
-  cohesionWeight: 1
+  cohesionWeight: 0.5
   seperateWeight: 2.5
   targetWeight: 3
   targetWeightInPanic: 0.2
@@ -33,5 +35,3 @@ MonoBehaviour:
   boundsRadius: 0.27
   avoidCollisionWeight: 100
   collisionAvoidDst: 2
-  avoidMovingCollisionWeight: 800
-  movingCollisionAvoidDst: 4
