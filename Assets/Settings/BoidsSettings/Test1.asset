@@ -15,23 +15,26 @@ MonoBehaviour:
   minSpeed: 0.1
   maxSpeed: 0.2
   panicMaxSpeed: 15
+  RandomSize: {x: 0.02, y: 0.08}
+  movingObstacleMask:
+    serializedVersion: 2
+    m_Bits: 2048
   panicTime: 1
   perceptionRadius: 2.5
-  avoidanceRadius: 1
-  maxSteerForce: 8
   avoidMovingCollisionWeight: 800
   movingCollisionAvoidDst: 4
   alignWeight: 2
+  avoidanceRadius: 1
   cohesionWeight: 1
   seperateWeight: 2.5
+  maxSteerForce: 8
   targetWeight: 3
   targetWeightInPanic: 0.2
   obstacleMask:
     serializedVersion: 2
     m_Bits: 1536
-  movingObstacleMask:
-    serializedVersion: 2
-    m_Bits: 2048
   boundsRadius: 0.27
   avoidCollisionWeight: 100
   collisionAvoidDst: 2
+  m_speedScale: 1
+  m_frequencyScale: 1

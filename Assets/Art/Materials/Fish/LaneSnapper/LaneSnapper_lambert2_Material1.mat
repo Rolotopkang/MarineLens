@@ -62,10 +62,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amplitude: 9
+    - _Amplitude: 10
     - _Frequency: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Speed: 13
+    - _Speed: 1
     m_Colors: []
   m_BuildTextureStacks: []

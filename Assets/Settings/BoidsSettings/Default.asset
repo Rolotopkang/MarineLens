@@ -14,24 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 2
   maxSpeed: 4
-  panicMaxSpeed: 15
+  panicMaxSpeed: 12
+  rotationSpeed: 15
+  RandomSize: {x: 0.025, y: 0.045}
+  movingObstacleMask:
+    serializedVersion: 2
+    m_Bits: 2048
   panicTime: 1
+  pancicRotationSpeed: 300
   perceptionRadius: 2.5
-  avoidanceRadius: 1
-  maxSteerForce: 8
+  avoidMovingCollisionWeight: 800
+  movingCollisionAvoidDst: 4
   alignWeight: 2
+  avoidanceRadius: 1
   cohesionWeight: 1
   seperateWeight: 2.5
+  maxSteerForce: 8
   targetWeight: 3
   targetWeightInPanic: 0.2
   obstacleMask:
     serializedVersion: 2
     m_Bits: 1536
-  movingObstacleMask:
-    serializedVersion: 2
-    m_Bits: 2048
   boundsRadius: 0.27
   avoidCollisionWeight: 100
   collisionAvoidDst: 2
-  avoidMovingCollisionWeight: 800
-  movingCollisionAvoidDst: 4
+  m_speedScale: 0.5
+  m_frequencyScale: 0.2
+  smoothingSpeed: 3
+  smoothingFrequency: 3
