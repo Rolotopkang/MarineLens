@@ -15,6 +15,7 @@ MonoBehaviour:
   minSpeed: 1
   maxSpeed: 5.12
   panicMaxSpeed: 5
+  RandomSize: {x: 0.02, y: 0.08}
   panicTime: 1
   perceptionRadius: 2.5
   avoidanceRadius: 1
