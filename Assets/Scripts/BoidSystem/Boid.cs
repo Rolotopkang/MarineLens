@@ -119,10 +119,14 @@ public class Boid : MonoBehaviour {
         forward = dir;
         
 
-        float targetSpeed = settings.m_speedScale * speed;
-        float targetFrequency = settings.m_frequencyScale * speed;
+        float targetSpeed = settings.m_speedScale * speed + settings.m_speedBase;
+        float targetFrequency = settings.m_frequencyScale * speed + settings.m_frequencyBase;
+
+
         float currentSpeed = fishRenderer.material.GetFloat("_Speed");
         float currentFrequency = fishRenderer.material.GetFloat("_Frequency");
+
+
         float smoothedSpeed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime * settings.smoothingSpeed);
         float smoothedFrequency = Mathf.Lerp(currentFrequency, targetFrequency, Time.deltaTime * settings.smoothingFrequency);
         fishRenderer.material.SetFloat("_Speed", smoothedSpeed);
