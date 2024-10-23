@@ -117,21 +117,20 @@ public class Boid : MonoBehaviour {
         cachedTransform.forward = Vector3.Slerp(cachedTransform.forward, dir, Time.deltaTime * (panic? settings.pancicRotationSpeed : settings.rotationSpeed));
         position = cachedTransform.position;
         forward = dir;
+        
+
+        float targetSpeed = settings.m_speedScale * speed + settings.m_speedBase;
+        float targetFrequency = settings.m_frequencyScale * speed + settings.m_frequencyBase;
 
 
-        if (settings.ifUseShaderChange)
-        {
-                  
-            float targetSpeed = settings.m_speedScale * speed;
-            float targetFrequency = settings.m_frequencyScale * speed;
-            float currentSpeed = fishRenderer.material.GetFloat("_Speed");
-            float currentFrequency = fishRenderer.material.GetFloat("_Frequency");
-            float smoothedSpeed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime * settings.smoothingSpeed);
-            float smoothedFrequency = Mathf.Lerp(currentFrequency, targetFrequency, Time.deltaTime * settings.smoothingFrequency);
-            fishRenderer.material?.SetFloat("_Speed", smoothedSpeed);
-            fishRenderer.material?.SetFloat("_Frequency", smoothedFrequency);  
-        }
+        float currentSpeed = fishRenderer.material.GetFloat("_Speed");
+        float currentFrequency = fishRenderer.material.GetFloat("_Frequency");
 
+
+        float smoothedSpeed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime * settings.smoothingSpeed);
+        float smoothedFrequency = Mathf.Lerp(currentFrequency, targetFrequency, Time.deltaTime * settings.smoothingFrequency);
+        fishRenderer.material.SetFloat("_Speed", smoothedSpeed);
+        fishRenderer.material.SetFloat("_Frequency", smoothedFrequency);
     }
 
     bool IsHeadingForCollision () {

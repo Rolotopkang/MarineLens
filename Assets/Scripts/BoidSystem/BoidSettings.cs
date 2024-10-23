@@ -39,10 +39,12 @@ public class BoidSettings : ScriptableObject {
     public float avoidCollisionWeight = 10;
     public float collisionAvoidDst = 5;
 
-    [Header("shader相关")] 
-    public bool ifUseShaderChange = true;
+    [Header("shader相关")]
+    public float m_speedBase = 0.5f;
+    public float m_frequencyBase = 0.5f;
     public float m_speedScale = 1f;
     public float m_frequencyScale = 1f;
     public float smoothingSpeed = 1f;
     public float smoothingFrequency = 1f;
+
 }
