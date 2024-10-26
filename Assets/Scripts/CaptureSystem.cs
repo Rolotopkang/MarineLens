@@ -18,7 +18,7 @@ public class CaptureSystem : MonoBehaviour
         if (other.GetComponent<trash>() && other.gameObject.CompareTag("Trash"))
         {
             other.GetComponent<trash>().TrashCaptured();
-            _hapticImpulsePlayer.SendHapticImpulse(0.5f, 0.2f, 0);
+            _hapticImpulsePlayer.SendHapticImpulse(0.5f, 0.1f, 0);
         }
     }
 }
