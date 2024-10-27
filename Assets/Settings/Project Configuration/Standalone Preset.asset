@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Active: 1
   screenSpaceReflectionSettings:
     enable: 0
-  directionalCaustics: 1
+  directionalCaustics: 0
   displacementPrePassSettings:
     enable: 0
     range: 500
