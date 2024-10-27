@@ -6,14 +6,26 @@ using UnityEngine;
 
 public class WaterArea : MonoBehaviour
 {
-    [ColorUsage(true, true)]  // 启用 HDR 支持
-    public Color BaseColor = Color.blue;  // 目标颜色
+    public string AreaName;
+    
+    [ColorUsage(true, true)]
+    public Color InitBaseColor = Color.blue;
+    
+    [ColorUsage(true, true)]
+    public Color InitShallowColor = Color.blue;
+    
+    [HideInInspector]
+    [ColorUsage(true, true)]
+    public Color BaseColor = Color.blue;
+    
+    [HideInInspector]
     [ColorUsage(true,true)]
     public Color ShallowColor = Color.blue;
-    public float blendDistance = 15.0f;  // 过渡距离（米）
+    public float blendDistance = 15.0f;
 
     private BoxCollider myCollider;
     public bool isPlayerIn = false;
+    public bool isCurrentArea;
 
     private Camera currentCamera;
     private void Start()
@@ -21,13 +33,14 @@ public class WaterArea : MonoBehaviour
         myCollider = GetComponent<BoxCollider>();
         AreaManager.GetInstance().activeRegions.Add(this);
         currentCamera = Camera.main;
+        BaseColor = InitBaseColor;
+        ShallowColor = InitShallowColor;
     }
     
     private void Update()
     {
         if (currentCamera)
         {
-            // 增加过渡距离，创建扩展后的 Bounds
             Bounds extendedBounds = myCollider.bounds;
             extendedBounds.Expand(blendDistance * 2);
             
@@ -39,6 +52,8 @@ public class WaterArea : MonoBehaviour
             {
                 isPlayerIn = false;
             }
+
+            isCurrentArea = myCollider.bounds.Contains(currentCamera.transform.position);
         }
     }
     

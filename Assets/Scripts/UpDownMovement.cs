@@ -19,8 +19,6 @@ public class UpDownMovement : LocomotionProvider
 
     bool m_AttemptedGetCharacterController;
 
-    bool m_IsMovingXROrigin;
-
     Vector3 m_VerticalVelocity;
 
     private void OnEnable()
@@ -69,9 +67,7 @@ public class UpDownMovement : LocomotionProvider
 
         if (locomotionState != LocomotionState.Moving)
             return;
-
-        // Note that calling Move even with Vector3.zero will have an effect by causing isGrounded to update
-        m_IsMovingXROrigin = true;
+        
         transformation.motion = motion;
         TryQueueTransformation(transformation);
     }

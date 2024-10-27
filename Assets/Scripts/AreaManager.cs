@@ -10,10 +10,13 @@ public class AreaManager : Singleton<AreaManager>
 {
     public Renderer waterRenderer;
     public bool DebugMode = false;
+    [HideInInspector]
     [ColorUsage(true,true)]
     public Color InitDeepColor;
+    [HideInInspector]
     [ColorUsage(true,true)]
     public Color InitShallowColor;
+    [HideInInspector]
     public List<WaterArea> activeRegions = new List<WaterArea>();
     
     
@@ -50,12 +53,9 @@ public class AreaManager : Singleton<AreaManager>
         foreach (WaterArea region in activeRegions)
         {
             BoxCollider boxCollider = region.GetComponent<BoxCollider>();
-            
             if (boxCollider == null) continue;
-            
             if (!region.isPlayerIn) { continue; }
-
-
+            
             float distance = Vector3.Distance(currentCamera.transform.position, boxCollider.ClosestPoint(currentCamera.transform.position));
             float blendFactor = Mathf.Clamp01(1 - (distance / region.blendDistance));
 
@@ -69,5 +69,18 @@ public class AreaManager : Singleton<AreaManager>
             
         Color emissionShallowColor = blendedShallowColor * totalWeight;
         waterRenderer.sharedMaterial.SetColor("_ShallowColor", blendedShallowColor);
+    }
+
+    public WaterArea CurrentArea()
+    {
+        foreach (WaterArea area in activeRegions)
+        {
+            if (area.isCurrentArea)
+            {
+                return area;
+            }
+        }
+
+        return null;
     }
 }

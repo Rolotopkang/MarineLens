@@ -275,8 +275,8 @@ Material:
     - _TranslucencyReflectionMask: 0
     - _TranslucencyStrength: 2
     - _TranslucencyStrengthDirect: 0.019
-    - _UnderwaterRefractionOffset: 0.5
-    - _UnderwaterSurfaceSmoothness: 0.85
+    - _UnderwaterRefractionOffset: 0.2
+    - _UnderwaterSurfaceSmoothness: 0.8
     - _VertexColorDepth: 0
     - _VertexColorFoam: 0
     - _VertexColorWaveFlattening: 0
