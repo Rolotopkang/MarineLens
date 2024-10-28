@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 public class trash : MonoBehaviour
 {
 
+    public bool isCleaned = false;
     private Outline _outline;
 
 
@@ -20,12 +21,16 @@ public class trash : MonoBehaviour
     {
         
     }
-    
-    //TODO 进度
-    
+
     public void TrashCaptured()
     {
-        Destroy(gameObject);
+        if (isCleaned)
+        {
+            return;
+        }
+        transform.parent.GetComponent<WaterArea>().AddProgress();
+        isCleaned = true;
+        gameObject.SetActive(false);
     }
     
     private IEnumerator HighLight(float sec)
