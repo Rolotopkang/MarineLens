@@ -74,7 +74,7 @@ MonoBehaviour:
   resources: {fileID: 11400000, guid: 4eff212383c9f5945ae947b357c76582, type: 2}
   settings:
     allowBlur: 0
-    allowDistortion: 1
+    allowDistortion: 0
     distortionMode: 1
     directionalCaustics: 0
     accurateDirectionalCaustics: 1
