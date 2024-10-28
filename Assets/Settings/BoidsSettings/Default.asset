@@ -16,7 +16,7 @@ MonoBehaviour:
   maxSpeed: 4
   panicMaxSpeed: 12
   rotationSpeed: 15
-  RandomSize: {x: 0.15, y: 0.25}
+  RandomSize: {x: 0.1, y: 0.15}
   movingObstacleMask:
     serializedVersion: 2
     m_Bits: 2048

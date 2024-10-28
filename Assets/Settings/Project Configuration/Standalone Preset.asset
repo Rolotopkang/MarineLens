@@ -77,7 +77,7 @@ MonoBehaviour:
     allowDistortion: 0
     distortionMode: 1
     directionalCaustics: 0
-    accurateDirectionalCaustics: 0
+    accurateDirectionalCaustics: 1
     waterlineRefraction: 1
 --- !u!114 &5459186132389944075
 MonoBehaviour:
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Active: 1
   screenSpaceReflectionSettings:
     enable: 0
-  directionalCaustics: 1
+  directionalCaustics: 0
   displacementPrePassSettings:
     enable: 0
     range: 500
