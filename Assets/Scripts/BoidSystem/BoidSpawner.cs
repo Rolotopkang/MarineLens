@@ -26,7 +26,7 @@ public class BoidSpawner : MonoBehaviour {
         boids = new Boid[spawnCount];
         for (int i = 0; i < spawnCount; i++) {
             Vector3 pos = transform.position + Random.insideUnitSphere * spawnRadius;
-            Boid boid = Instantiate (prefab);
+            Boid boid = Instantiate (prefab,transform);
             boid.transform.position = pos;
             boid.transform.forward = Random.insideUnitSphere;
             boids[i] = boid;
@@ -34,7 +34,7 @@ public class BoidSpawner : MonoBehaviour {
     }
     void Start () {
         foreach (Boid b in boids) {
-            b.Initialize (settings, ChasingTarget?  target? target.transform : null :null);
+            b.Initialize (settings, ChasingTarget?  target? target.transform : null :null,Random.Range(settings.RandomSize.x,settings.RandomSize.y));
         }
         if (!ChasingTarget)
         {
