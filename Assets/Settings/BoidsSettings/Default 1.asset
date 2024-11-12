@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6194ee95dedb4d71a8fe738abba0f47, type: 3}
+  m_Name: Default 1
+  m_EditorClassIdentifier: 
+  minSpeed: 2
+  maxSpeed: 4
+  panicMaxSpeed: 12
+  rotationSpeed: 15
+  RandomSize: {x: 0.2, y: 0.4}
+  movingObstacleMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  panicTime: 1
+  pancicRotationSpeed: 300
+  perceptionRadius: 2.5
+  avoidMovingCollisionWeight: 800
+  movingCollisionAvoidDst: 4
+  alignWeight: 0.87
+  avoidanceRadius: 2
+  cohesionWeight: 0.1
+  seperateWeight: 3
+  maxSteerForce: 2.12
+  targetWeight: 2.17
+  targetWeightInPanic: 0.2
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 1536
+  boundsRadius: 0.27
+  avoidCollisionWeight: 100
+  collisionAvoidDst: 2
+  m_speedBase: 0.2
+  m_frequencyBase: 0.05
+  m_speedScale: 0
+  m_frequencyScale: 0
+  smoothingSpeed: 1
+  smoothingFrequency: 1
