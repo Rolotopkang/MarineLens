@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class TEST_AddCleanPersentage : MonoBehaviour
 {
-    public WaterArea WaterArea;
-
-
     public void OnButtonClick()
     {
-        WaterArea.AddProgress();
+        AreaManager.GetInstance().CurrentArea().AddProgress();
     }
 }
