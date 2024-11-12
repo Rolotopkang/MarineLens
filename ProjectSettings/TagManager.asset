@@ -13,15 +13,15 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Grabbing
+  - Grabbable
   - Boid
   - Obstacle
   - Wall
   - MovingObstacle
   - Trash
-  - 
-  - 
+  - Hand
+  - HandPlayer
   - 
   - 
   - 

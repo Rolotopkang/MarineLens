@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 
 public class CaptureSystem : MonoBehaviour
 {
+    public Transform Center;
     private HapticImpulsePlayer _hapticImpulsePlayer;
 
     private void Start()
@@ -17,8 +18,14 @@ public class CaptureSystem : MonoBehaviour
     {
         if (other.GetComponent<trash>() && other.gameObject.CompareTag("Trash"))
         {
-            other.GetComponent<trash>().TrashCaptured();
-            _hapticImpulsePlayer.SendHapticImpulse(0.5f, 0.1f, 0);
+            
+            Vector3 tmp_directionToOther = (other.transform.position - Center.position).normalized;
+            float tmp_dot = Vector3.Dot(-transform.right, tmp_directionToOther);
+            if (tmp_dot < 0)
+            {
+                other.GetComponent<trash>().TrashCaptured();
+                _hapticImpulsePlayer.SendHapticImpulse(0.5f, 0.1f, 0);
+            }
         }
     }
 }
