@@ -16,7 +16,7 @@ MonoBehaviour:
   maxSpeed: 4
   panicMaxSpeed: 12
   rotationSpeed: 15
-  RandomSize: {x: 2, y: 3}
+  RandomSize: {x: 0.2, y: 0.4}
   movingObstacleMask:
     serializedVersion: 2
     m_Bits: 2048
@@ -26,9 +26,9 @@ MonoBehaviour:
   avoidMovingCollisionWeight: 800
   movingCollisionAvoidDst: 4
   alignWeight: 0.87
-  avoidanceRadius: 1
-  cohesionWeight: 1
-  seperateWeight: 2.5
+  avoidanceRadius: 2
+  cohesionWeight: 0.1
+  seperateWeight: 3
   maxSteerForce: 2.12
   targetWeight: 2.17
   targetWeightInPanic: 0.2
@@ -38,9 +38,9 @@ MonoBehaviour:
   boundsRadius: 0.27
   avoidCollisionWeight: 100
   collisionAvoidDst: 2
-  m_speedBase: 4
-  m_frequencyBase: 0.15
-  m_speedScale: 0.4
+  m_speedBase: 0.2
+  m_frequencyBase: 0.05
+  m_speedScale: 0
   m_frequencyScale: 0
-  smoothingSpeed: 1.81
-  smoothingFrequency: 3
+  smoothingSpeed: 1
+  smoothingFrequency: 1

@@ -70,8 +70,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _GradientOffset2: 0
-    - _GradientSmoothness2: 0.19
+    - _GradientOffset2: 0.77
+    - _GradientSmoothness2: 0.42
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -87,7 +87,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _Emmision1: {r: 0, g: 0, b: 0, a: 1}
     - _MainColor: {r: 0.6981132, g: 0.4953143, b: 0.4313812, a: 1}
-    - _MainColor1: {r: 0, g: 0.037190214, b: 0.29411766, a: 1}
+    - _MainColor1: {r: 0, g: 0.03477536, b: 0.4056604, a: 1}
     - _SecondaryColor: {r: 1, g: 0.7508735, b: 0.6745283, a: 1}
-    - _TopColor1: {r: 0.5997726, g: 0.5286579, b: 0.6792453, a: 1}
+    - _TopColor1: {r: 0.6730257, g: 0.514151, b: 1, a: 1}
   m_BuildTextureStacks: []
