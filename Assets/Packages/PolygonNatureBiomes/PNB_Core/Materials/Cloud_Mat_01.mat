@@ -70,7 +70,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _PanningNoise:
         m_Texture: {fileID: 2800000, guid: 796e3706ceb704247adb957915a9edaf, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: -2.04, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PanningNoise1:
         m_Texture: {fileID: 2800000, guid: 796e3706ceb704247adb957915a9edaf, type: 3}
@@ -125,7 +125,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _PanningSpeed: 0.015
+    - _PanningSpeed: 0.517
     - _PanningSpeed1: 1
     - _Parallax: 0.02
     - _QueueControl: 0
@@ -143,16 +143,16 @@ Material:
     - _Translucency: 12
     - _UVSec: 0
     - _WindDirection1: 1.24
-    - _WindEffect: 1
-    - _WindNoiseScale: 0.005
+    - _WindEffect: 2
+    - _WindNoiseScale: 0.367
     - _WindNoiseScale1: 0.662
     - _WindWorldScale: 0.02
     - _WindWorldScale1: 2.47
-    - _X_Multiplier: 2
+    - _X_Multiplier: 0.137
     - _Y_Multi: 0
-    - _Y_Multiplier: 0
+    - _Y_Multiplier: 0.312
     - _ZWrite: 1
-    - _Z_Multiplier: 0.31
+    - _Z_Multiplier: 0
     - __dirty: 0
     - _contrast: 18.69
     - _emissive: 0.25
@@ -160,12 +160,12 @@ Material:
     - _fresnel: 0.15
     - _lightDirMulti: 0.36
     - _lightMax: 1
-    - _lightMin: 0.246
+    - _lightMin: 0.463
     - _lightingContrast: 121.99
-    - _maxEmit: 1.301
+    - _maxEmit: 0.682
     - _minEmit: 0.912
     - _minEmit1: 0.19
-    - _minEmit_dir: 0.611
+    - _minEmit_dir: 0.853
     - _poster: 9.08
     - _rimLight: 0.75
     - _rimLight1: 0.5
@@ -179,7 +179,7 @@ Material:
     - _Colour1: {r: 0.5, g: 0.5, b: 0.5, a: 0}
     - _Colour2: {r: 0.681, g: 0.8245501, b: 1, a: 0}
     - _EmissionColor: {r: 0.092, g: 0.092, b: 0.092, a: 1}
-    - _EmissiveColour: {r: 0.36378607, g: 0.5328233, b: 0.7075472, a: 0}
+    - _EmissiveColour: {r: 0.43543077, g: 0.7004826, b: 0.9716981, a: 0}
     - _GustSmoothing1: {r: 1, g: 1, b: 1, a: 0}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0}
     - _Translucency: {r: 0.5, g: 0.5, b: 0.5, a: 0}
