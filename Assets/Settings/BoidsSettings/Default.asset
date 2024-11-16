@@ -19,7 +19,7 @@ MonoBehaviour:
   RandomSize: {x: 0.1, y: 0.15}
   movingObstacleMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 10240
   panicTime: 1
   pancicRotationSpeed: 300
   perceptionRadius: 2.5
