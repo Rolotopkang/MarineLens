@@ -28,7 +28,7 @@ namespace Autohand.Demo{
             var handPos = hand.transform.position;
             var headPos = head.transform.position;
 
-            float lookness = Vector3.Dot((headPos - handPos).normalized, -hand.palmTransform.forward);
+            float lookness = Vector3.Dot((headPos - handPos).normalized, hand.palmTransform.forward);
             float distance = Vector3.Distance(headPos, hand.palmTransform.position);
             bool found = lookness >= anglePreciseness && distance < maxDistance && hand.holdingObj == null;
 

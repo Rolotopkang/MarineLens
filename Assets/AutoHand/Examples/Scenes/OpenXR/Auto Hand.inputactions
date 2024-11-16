@@ -9,7 +9,7 @@
                     "name": "Grip Pressed (R)",
                     "type": "Button",
                     "id": "1d49c14b-53c9-4b24-9f7e-01b847117447",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(pressPoint=0.85)",
                     "initialStateCheck": false
@@ -18,7 +18,7 @@
                     "name": "Grip Released (R)",
                     "type": "Button",
                     "id": "2bcdcfe6-d375-47cf-8611-8a091d0e1373",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(pressPoint=0.8,behavior=1)",
                     "initialStateCheck": false
@@ -27,7 +27,7 @@
                     "name": "Trigger Pressed (R)",
                     "type": "Button",
                     "id": "566d1445-1bae-41c2-8faa-0fb585d6fcf2",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(pressPoint=0.85)",
                     "initialStateCheck": false
@@ -36,7 +36,7 @@
                     "name": "Trigger Released (R)",
                     "type": "Button",
                     "id": "84a2eb22-abbe-42a0-bfd4-c7b23e87413e",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(pressPoint=0.8,behavior=1)",
                     "initialStateCheck": false
@@ -45,7 +45,7 @@
                     "name": "Primary Pressed (R)",
                     "type": "Button",
                     "id": "22b8d162-dd2e-4b8e-8a87-601b84643f15",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press",
                     "initialStateCheck": false
@@ -54,7 +54,7 @@
                     "name": "Primary Released (R)",
                     "type": "Button",
                     "id": "9af1f2ca-5121-413f-8dd5-bffcbad8aa46",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(behavior=1)",
                     "initialStateCheck": false
@@ -63,7 +63,7 @@
                     "name": "Grip Pressed (L)",
                     "type": "Button",
                     "id": "61fbe058-5cbf-404d-843a-0ec8ef9860d0",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(pressPoint=0.85)",
                     "initialStateCheck": false
@@ -72,7 +72,7 @@
                     "name": "Grip Released (L)",
                     "type": "Button",
                     "id": "cf582500-8c04-40d2-9d63-27232968428e",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(pressPoint=0.8,behavior=1)",
                     "initialStateCheck": false
@@ -81,7 +81,7 @@
                     "name": "Trigger Pressed (L)",
                     "type": "Button",
                     "id": "b755511b-f257-4aaf-b514-2fa5b634537f",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(pressPoint=0.85)",
                     "initialStateCheck": false
@@ -99,7 +99,7 @@
                     "name": "Primary Pressed (L)",
                     "type": "Button",
                     "id": "5b4863cc-89dc-4525-be7d-a1a6977afcfd",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press",
                     "initialStateCheck": false
@@ -108,7 +108,7 @@
                     "name": "Primary Released (L)",
                     "type": "Button",
                     "id": "f751b8c0-0731-4e3e-bfae-85bc6c54cc8b",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Press(behavior=1)",
                     "initialStateCheck": false
@@ -166,6 +166,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "145a73b2-04b9-49a1-bcd1-bfe89874632a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -408,6 +417,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Haptic (L)",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2bd08222-8ac5-47e0-a2cc-970ffc64866c",
+                    "path": "<XRController>{LeftHand}/{MenuButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
