@@ -19,7 +19,7 @@ MonoBehaviour:
   RandomSize: {x: 0.5, y: 1}
   movingObstacleMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 10240
   panicTime: 1
   pancicRotationSpeed: 300
   perceptionRadius: 2.5
@@ -38,7 +38,8 @@ MonoBehaviour:
   boundsRadius: 0.27
   avoidCollisionWeight: 100
   collisionAvoidDst: 2
-  ifUseShaderChange: 0
+  m_speedBase: 0.5
+  m_frequencyBase: 0.5
   m_speedScale: 0.5
   m_frequencyScale: 0.2
   smoothingSpeed: 3
