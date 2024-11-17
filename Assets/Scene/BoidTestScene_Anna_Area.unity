@@ -376,6 +376,10 @@ PrefabInstance:
       value: SM_Env_Rock_02 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 53f2cb4c49199ff459686e2b07b59f32, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53f2cb4c49199ff459686e2b07b59f32, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1234,6 +1238,10 @@ PrefabInstance:
       value: SM_Prop_Whale_Skeleton_Ribcage_01
       objectReference: {fileID: 0}
     - target: {fileID: 2356300606596153871, guid: 23e16c5f97d3481479d565ed9c8f46c4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356300606596153871, guid: 23e16c5f97d3481479d565ed9c8f46c4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1308,7 +1316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 90815838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Stones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1509,6 +1517,10 @@ PrefabInstance:
     - target: {fileID: 2356300606596153871, guid: 23e16c5f97d3481479d565ed9c8f46c4, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Whale_Skeleton_Ribcage_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356300606596153871, guid: 23e16c5f97d3481479d565ed9c8f46c4, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2356300606596153871, guid: 23e16c5f97d3481479d565ed9c8f46c4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2900,6 +2912,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7605358125850461529, guid: 4af5d8d0985d215499d9688352f2da12, type: 3}
   m_PrefabInstance: {fileID: 1075135770}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &205695523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5089403021148120129, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+  m_PrefabInstance: {fileID: 1602384426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &205695524 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+  m_PrefabInstance: {fileID: 1602384426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &205695526
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205695523}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c260b44326bc452428e662970ab888bd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c260b44326bc452428e662970ab888bd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &207057761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3196,6 +3234,7 @@ Transform:
   - {fileID: 90815838}
   - {fileID: 460491489}
   - {fileID: 1420519270}
+  - {fileID: 807916399}
   m_Father: {fileID: 51605850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &221633493
@@ -5687,6 +5726,10 @@ PrefabInstance:
       value: SM_Env_Pile_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 49e0828913590ad48b3df222d542029b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 49e0828913590ad48b3df222d542029b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -6362,7 +6405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 394107541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Whale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6619,6 +6662,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 10f731cde0477484d9b413476f1b453c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 10f731cde0477484d9b413476f1b453c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 10f731cde0477484d9b413476f1b453c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6909,6 +6956,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Ramp_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8598,13 +8649,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 575068683}
+  - component: {fileID: 575068684}
   m_Layer: 0
   m_Name: Underwater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &575068683
 Transform:
   m_ObjectHideFlags: 0
@@ -8621,6 +8673,27 @@ Transform:
   - {fileID: 1571646960}
   m_Father: {fileID: 794780830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &575068684
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575068682}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b24a07dbc02be1446b76a122eacadfb3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &575644993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9924,6 +9997,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Ramp_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12013,6 +12090,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4653096046935194315, guid: f7646a401cf04674c8b46f104d7ba8f7, type: 3}
   m_PrefabInstance: {fileID: 805884734}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &807916398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807916399}
+  m_Layer: 0
+  m_Name: Boid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &807916399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807916398}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 81.28931, y: 360.3993, z: 957.13116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1391963676}
+  - {fileID: 205695524}
+  m_Father: {fileID: 221572331}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &809596367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12492,6 +12602,10 @@ PrefabInstance:
       value: SM_Env_Pile_02
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 27bf68b9c8b5b894495b4b8dc33f3b7c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 27bf68b9c8b5b894495b4b8dc33f3b7c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -12656,6 +12770,10 @@ PrefabInstance:
     - target: {fileID: 3993003632129020523, guid: 63e5a2ee6db40014080468e07e51cebd, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Arch_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993003632129020523, guid: 63e5a2ee6db40014080468e07e51cebd, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3993003632129020523, guid: 63e5a2ee6db40014080468e07e51cebd, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13486,7 +13604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 964359746}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StonesAroundWhale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14388,12 +14506,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 394107541}
     m_Modifications:
     - target: {fileID: 2667271309578618258, guid: c20901c620526b94a98e894c393f1e41, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667271309578618258, guid: c20901c620526b94a98e894c393f1e41, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6160381818469031261, guid: c20901c620526b94a98e894c393f1e41, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Whale_Skeleton_Skull_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160381818469031261, guid: c20901c620526b94a98e894c393f1e41, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6160381818469031261, guid: c20901c620526b94a98e894c393f1e41, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14717,6 +14843,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Spikes_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15147,6 +15277,10 @@ PrefabInstance:
       value: SM_Prop_Whale_Skeleton_Ribcage_02
       objectReference: {fileID: 0}
     - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -15344,6 +15478,10 @@ PrefabInstance:
     - target: {fileID: 807035543805990633, guid: deee6edd9deaa904089315de2f73719c, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Whale_Skeleton_Vertebra_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 807035543805990633, guid: deee6edd9deaa904089315de2f73719c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 807035543805990633, guid: deee6edd9deaa904089315de2f73719c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17013,6 +17151,10 @@ PrefabInstance:
       value: SM_Prop_Whale_Skeleton_Ribcage_01
       objectReference: {fileID: 0}
     - target: {fileID: 2356300606596153871, guid: 23e16c5f97d3481479d565ed9c8f46c4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2356300606596153871, guid: 23e16c5f97d3481479d565ed9c8f46c4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17137,6 +17279,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8dce33cb713b8ed43901d4505a8982fc, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Ramp_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8dce33cb713b8ed43901d4505a8982fc, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8dce33cb713b8ed43901d4505a8982fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17896,6 +18042,10 @@ PrefabInstance:
       value: SM_Env_Rock_Pile_04
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5cb4989bfa4a344197de800a5461b55, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5cb4989bfa4a344197de800a5461b55, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -18227,6 +18377,10 @@ PrefabInstance:
       value: SM_Env_Rock_Spikes_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -18387,6 +18541,10 @@ PrefabInstance:
     - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Whale_Skeleton_Ribcage_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18892,6 +19050,10 @@ PrefabInstance:
       value: SM_Env_Rock_Ramp_02 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -19315,6 +19477,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e57465a8b1c83c47983ab646cf256a7, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Pile_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2e57465a8b1c83c47983ab646cf256a7, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2e57465a8b1c83c47983ab646cf256a7, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20161,6 +20327,10 @@ PrefabInstance:
       value: SM_Env_Rock_Pile_07
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1edf09ed61342594cb0d285a7b36e3a9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1edf09ed61342594cb0d285a7b36e3a9, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -20242,6 +20412,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Ramp_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20563,6 +20737,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3932609896795058496, guid: 0ca00c2b799dcb440bfac2ced3c39777, type: 3}
   m_PrefabInstance: {fileID: 1595865540}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1391963676 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+  m_PrefabInstance: {fileID: 1558868796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1392609710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20626,6 +20805,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 10f731cde0477484d9b413476f1b453c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 10f731cde0477484d9b413476f1b453c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 10f731cde0477484d9b413476f1b453c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20827,6 +21010,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8dce33cb713b8ed43901d4505a8982fc, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Ramp_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8dce33cb713b8ed43901d4505a8982fc, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8dce33cb713b8ed43901d4505a8982fc, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22122,6 +22309,10 @@ PrefabInstance:
       value: SM_Env_Rock_Ramp_02 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22491,6 +22682,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a6f82888bb504654ab4a7d8f96952286, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Pile_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6f82888bb504654ab4a7d8f96952286, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a6f82888bb504654ab4a7d8f96952286, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23696,7 +23891,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 807916399}
     m_Modifications:
     - target: {fileID: 3155270449792801685, guid: 13e6e86335618294491a252d31d8008b, type: 3}
       propertyPath: prefab
@@ -23724,15 +23919,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -97.9
+      value: 17.316956
       objectReference: {fileID: 0}
     - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.82
+      value: 18.592762
       objectReference: {fileID: 0}
     - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -154.5
+      value: -12.311035
       objectReference: {fileID: 0}
     - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23910,6 +24105,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e72b30dab5db2e147bdac6912ba34310, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Coral_09 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e72b30dab5db2e147bdac6912ba34310, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e72b30dab5db2e147bdac6912ba34310, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24353,6 +24552,10 @@ PrefabInstance:
       value: SM_Env_Rock_02
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 53f2cb4c49199ff459686e2b07b59f32, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53f2cb4c49199ff459686e2b07b59f32, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -24597,6 +24800,94 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1001 &1602384426
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 807916399}
+    m_Modifications:
+    - target: {fileID: 1615862508925506159, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: c260b44326bc452428e662970ab888bd, type: 2}
+    - target: {fileID: 1615862508925506159, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: c260b44326bc452428e662970ab888bd, type: 2}
+    - target: {fileID: 3155270449792801685, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 1151178259066060629, guid: 3fee8b779ea0f764ab8d6966cabe7187, type: 3}
+    - target: {fileID: 3155270449792801685, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 11400000, guid: dfe958cd59015a34ab5920336acdbf90, type: 2}
+    - target: {fileID: 3155270449792801685, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: spawnCount
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5089403021148120129, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_Name
+      value: BoidSpawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441210097384992158, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441210097384992158, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -37.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892873495507069384, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5089403021148120129, guid: 13e6e86335618294491a252d31d8008b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 205695526}
+  m_SourcePrefab: {fileID: 100100000, guid: 13e6e86335618294491a252d31d8008b, type: 3}
 --- !u!4 &1603084397 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3932609896795058496, guid: 0ca00c2b799dcb440bfac2ced3c39777, type: 3}
@@ -24670,6 +24961,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 01b81804aebb80b4cb2a00543a1ddf8c, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 01b81804aebb80b4cb2a00543a1ddf8c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 01b81804aebb80b4cb2a00543a1ddf8c, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24812,6 +25107,10 @@ PrefabInstance:
       value: SM_Env_Rock_Pile_03
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a6f82888bb504654ab4a7d8f96952286, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6f82888bb504654ab4a7d8f96952286, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -24923,6 +25222,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Ramp_02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26111,6 +26414,10 @@ PrefabInstance:
       value: SM_Prop_Coral_10 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1e67390ba101c8c46b4917fbface11e2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e67390ba101c8c46b4917fbface11e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -26145,7 +26452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1691714241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26306,6 +26613,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Spikes_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26812,6 +27123,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Ramp_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27733,6 +28048,10 @@ PrefabInstance:
       value: SM_Env_Rock_Arch_01
       objectReference: {fileID: 0}
     - target: {fileID: 3993003632129020523, guid: 63e5a2ee6db40014080468e07e51cebd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993003632129020523, guid: 63e5a2ee6db40014080468e07e51cebd, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -28094,6 +28413,10 @@ PrefabInstance:
       value: SM_Env_Rock_Spikes_01 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -28180,6 +28503,10 @@ PrefabInstance:
     - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Whale_Skeleton_Ribcage_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28543,6 +28870,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Ramp_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29669,6 +30000,10 @@ PrefabInstance:
       value: SM_Env_Rock_Spikes_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3deafd393f8279045af6bac023888b55, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -29750,6 +30085,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a5cb4989bfa4a344197de800a5461b55, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Pile_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5cb4989bfa4a344197de800a5461b55, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a5cb4989bfa4a344197de800a5461b55, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29840,6 +30179,10 @@ PrefabInstance:
       value: SM_Env_Rock_Ramp_02
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc27ef0eb7b6ed849aec78ee1f78e08a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -29864,6 +30207,10 @@ PrefabInstance:
     - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Whale_Skeleton_Ribcage_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6927306889455320800, guid: 10ad52b210dbe11448880588a5f34879, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -30888,6 +31235,10 @@ PrefabInstance:
       value: SM_Env_Pile_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 49e0828913590ad48b3df222d542029b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 49e0828913590ad48b3df222d542029b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -31394,6 +31745,10 @@ PrefabInstance:
       value: SM_Prop_Whale_Skeleton_Shoulder_01
       objectReference: {fileID: 0}
     - target: {fileID: 4232629815519952076, guid: c2579d00174a4c54faaf1afff8a09005, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232629815519952076, guid: c2579d00174a4c54faaf1afff8a09005, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -31475,6 +31830,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1edf09ed61342594cb0d285a7b36e3a9, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Pile_07
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1edf09ed61342594cb0d285a7b36e3a9, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1edf09ed61342594cb0d285a7b36e3a9, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31962,6 +32321,10 @@ PrefabInstance:
       value: SM_Env_Rock_04 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 01b81804aebb80b4cb2a00543a1ddf8c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 01b81804aebb80b4cb2a00543a1ddf8c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -32124,6 +32487,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7be7a841dcfa1154d847211d79a39870, type: 3}
       propertyPath: m_Name
       value: SM_Env_Rock_Pile_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7be7a841dcfa1154d847211d79a39870, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7be7a841dcfa1154d847211d79a39870, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32933,6 +33300,10 @@ PrefabInstance:
       value: SM_Env_Rock_Pile_05
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a8083c5796ed9b14f9347a06e2102742, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a8083c5796ed9b14f9347a06e2102742, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -33200,7 +33571,6 @@ SceneRoots:
   - {fileID: 541894714}
   - {fileID: 1953855999}
   - {fileID: 51605850}
-  - {fileID: 1558868796}
   - {fileID: 1552335252}
   - {fileID: 1095536552}
   - {fileID: 65141153}
