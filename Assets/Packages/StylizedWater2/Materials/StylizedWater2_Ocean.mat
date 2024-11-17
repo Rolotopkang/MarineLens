@@ -36,7 +36,7 @@ Material:
   m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: _VertexColorDepth
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -149,16 +149,16 @@ Material:
     - _CausticsOn: 1
     - _CausticsSpeed: 0.1
     - _CausticsTiling: 0.1
-    - _ColorAbsorption: 0
+    - _ColorAbsorption: 0.002
     - _CrossPan_IntersectionOn: 0
     - _Cull: 0
     - _Cutoff: 0.5
     - _Depth: 2.42
     - _DepthExp: 1
-    - _DepthHorizontal: 0.01
+    - _DepthHorizontal: 8
     - _DepthMode: 0
     - _DepthTexture: 1
-    - _DepthVertical: 5.7
+    - _DepthVertical: 0.01
     - _DisableDepthTexture: 0
     - _DistanceNormalsOn: 1
     - _DistanceNormalsTiling: 0.079999976
@@ -188,7 +188,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HorizonDistance: 32
+    - _HorizonDistance: 28
     - _IntersectionClipping: 0.583
     - _IntersectionDistortion: 0.2
     - _IntersectionFalloff: 1
@@ -223,11 +223,11 @@ Material:
     - _QueueOffset: 0
     - _ReceiveDynamicEffects: 1
     - _ReceiveShadows: 1
-    - _ReflectionBlur: 0
-    - _ReflectionDistortion: 0.274
+    - _ReflectionBlur: 0.874
+    - _ReflectionDistortion: 0.342
     - _ReflectionFresnel: 13.04
-    - _ReflectionLighting: 0
-    - _ReflectionStrength: 1
+    - _ReflectionLighting: 0.661
+    - _ReflectionStrength: 0.118
     - _Reflectivity: 1
     - _RefractionAmount: 0.05
     - _RefractionChromaticAberration: 1
@@ -257,9 +257,9 @@ Material:
     - _SpecularReflectionsOn: 1
     - _Speed: 1
     - _SrcBlend: 1
-    - _SunReflectionDistortion: 0.634
+    - _SunReflectionDistortion: 1.02
     - _SunReflectionPerturbance: 1
-    - _SunReflectionSize: 0.837
+    - _SunReflectionSize: 0.781
     - _SunReflectionStrength: 10
     - _Surface: 0
     - _TEXTURE_INTERSECTIONOn: 0
@@ -293,7 +293,7 @@ Material:
     - _ZClip: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.09019608, b: 0.18039216, a: 1}
+    - _BaseColor: {r: 0.15686275, g: 0.4509804, b: 0.35686275, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _DepthMapBounds: {r: -402.3, g: -459.43, b: 0.0012693577, a: 0}
     - _Direction: {r: 1, g: 1, b: 0, a: 0}
@@ -305,7 +305,7 @@ Material:
     - _IntersectionColor: {r: 1, g: 1, b: 1, a: 1}
     - _NormalTiling: {r: 0.22, g: 0.22, b: 0, a: 0}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShallowColor: {r: 0, g: 0.9411765, b: 0.9254902, a: 1}
+    - _ShallowColor: {r: 0, g: 0.09803922, b: 0.05490196, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _WaterColor: {r: 0.21176466, g: 0.6745098, b: 1, a: 1}
     - _WaterShallowColor: {r: 0, g: 0.9394503, b: 1, a: 1}
