@@ -8,7 +8,7 @@ public class TEST_Audio : MonoBehaviour
 
     public void Play()
     {
-        AudioManager.GetInstance().PlaySound(AudioClip,Vector3.zero, false,5000,() => {
+        AudioManager.GetInstance().PlaySound(AudioClip,new Vector3(-250,22,-122), false,100,() => {
             Debug.Log("播放结束");});
     }
 }
