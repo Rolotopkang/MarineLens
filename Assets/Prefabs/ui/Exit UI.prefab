@@ -386,8 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c027bb2ce6a93c438de6d5b8f4ad6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
-  dialogPanel: {fileID: 2656464574766941893}
+  dialogPanel: {fileID: 6233384435838201072}
   distanceFromPlayer: 2
 --- !u!1 &5402326766791023594
 GameObject:

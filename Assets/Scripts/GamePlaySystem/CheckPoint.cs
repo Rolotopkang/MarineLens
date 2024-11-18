@@ -8,6 +8,7 @@ public class CheckPoint : MonoBehaviour
 {
     public bool hasbeenchecked = false;
     public UnityEvent TriggerEnterEvent;
+    public Action Triggeraction;
     public UnityEvent TriggerExitEvent;
 
     private void OnTriggerEnter(Collider other)
@@ -15,6 +16,7 @@ public class CheckPoint : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && !hasbeenchecked)
         {
             TriggerEnterEvent.Invoke();
+            Triggeraction.Invoke();
             hasbeenchecked = true;
         }
     }
