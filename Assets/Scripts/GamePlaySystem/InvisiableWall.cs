@@ -47,12 +47,17 @@ public class InvisiableWall : MonoBehaviour
         {
             inCoolDown = true;
             tmp_coolDown = coolDown;
+            
+            
             Debug.Log("开始倒计时");
         }
     }
 
     private void DestoryWarningUI()
     {
+        
+        
+        
         Debug.Log("倒计时结束");
     }
     
