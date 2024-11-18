@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class trash : MonoBehaviour
 {
-
+    public AudioClip AudioClip;
     public bool isCleaned = false;
     private Outline _outline;
     public float MaxSize = 1.2f;
@@ -35,6 +35,7 @@ public class trash : MonoBehaviour
         {
             return;
         }
+        AudioManager.GetInstance().PlaySound(AudioClip,transform.position,false,50);
         transform.parent.GetComponent<WaterArea>().AddProgress();
         isCleaned = true;
         CapturedEvent.Invoke();

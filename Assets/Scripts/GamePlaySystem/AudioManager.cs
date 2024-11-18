@@ -30,4 +30,16 @@ public class AudioManager : Singleton<AudioManager>
         AudioInstance audioObject = Instantiate(audioSourcePrefab, position, Quaternion.identity).GetComponent<AudioInstance>();
         audioObject.Init(clip, loop, MaxDistance);
     }
+    
+    public void PlayBGSound(AudioClip clip)
+    {
+        if (clip == null || audioSourcePrefab == null)
+        {
+            Debug.LogError("缺少音效剪辑或 AudioSourcePrefab！");
+            return;
+        }
+
+        AudioInstance audioObject = Instantiate(audioSourcePrefab,Vector3.zero, Quaternion.identity).GetComponent<AudioInstance>();
+        audioObject.Init(clip);
+    }
 }
