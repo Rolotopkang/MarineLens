@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class TrashFloatingEffect : MonoBehaviour
 {
@@ -14,7 +16,6 @@ public class TrashFloatingEffect : MonoBehaviour
 
     void Start()
     {
-        startPosition = transform.position;
         noiseOffset = new Vector3(
             Random.Range(0f, 100f),
             Random.Range(0f, 100f),
@@ -22,6 +23,11 @@ public class TrashFloatingEffect : MonoBehaviour
         );
         Derection = Random.Range(0, 2)*2 - 1;
 
+    }
+
+    private void OnEnable()
+    {
+        startPosition = transform.position;
     }
 
     void Update()

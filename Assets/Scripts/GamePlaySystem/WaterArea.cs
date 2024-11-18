@@ -2,6 +2,7 @@
 using StylizedWater2.UnderwaterRendering;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Rendering;
 
 
@@ -58,6 +59,9 @@ public class WaterArea : MonoBehaviour
    
     public bool isPlayerIn = false;
     public bool isCurrentArea;
+    public bool hasBeenCleaned;
+
+    public UnityEvent EndCleanEvent;
 
     private BoxCollider myCollider;
     private Camera currentCamera;
@@ -98,6 +102,12 @@ public class WaterArea : MonoBehaviour
                 CleanPersentage = (float)CleanedCount/Trashes.Length;
                 isChanging = false;
             }
+        }
+
+        if (CleanPersentage >= 1 && !hasBeenCleaned)
+        {
+            EndCleanEvent.Invoke();
+            hasBeenCleaned = true;
         }
 
         BaseColor = Color.Lerp(InitBaseColor, TargetBaseColor, colorChangeCurve.Evaluate(CleanPersentage) );
