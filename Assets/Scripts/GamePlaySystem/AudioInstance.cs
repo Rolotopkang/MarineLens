@@ -9,7 +9,17 @@ public class AudioInstance : MonoBehaviour
     private AudioSource _source;
     private UnityAction PlayEnd;
     private bool isStart;
-    
+
+    public void Init(AudioClip clip)
+    {
+        _source = GetComponent<AudioSource>();
+        _source.clip = clip;
+        _source.loop = true;
+        _source.spatialBlend = 0;
+        _source.Play();
+        isStart = true;
+    }
+
     public void Init(AudioClip clip, bool isLoop, float maxDistance)
     {
         _source = GetComponent<AudioSource>();
@@ -41,7 +51,11 @@ public class AudioInstance : MonoBehaviour
         {
             if (!_source.isPlaying)
             {
-                PlayEnd.Invoke();
+                if (PlayEnd != null)
+                {
+                    PlayEnd.Invoke();
+                }
+
                 Destroy(gameObject);
             }
         }

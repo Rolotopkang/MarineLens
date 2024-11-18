@@ -28,6 +28,18 @@ public class CaptureSystem : MonoBehaviour
                 Grabbable.PlayHapticVibration(0.5f);
             }
         }
+        
+        if (other.GetComponent<trash_Logo>() && other.gameObject.CompareTag("Trash"))
+        {
+            
+            Vector3 tmp_directionToOther = (other.transform.position - Center.position).normalized;
+            float tmp_dot = Vector3.Dot(-transform.right, tmp_directionToOther);
+            if (tmp_dot > 0)
+            {
+                other.GetComponent<trash_Logo>().TrashCaptured();
+                Grabbable.PlayHapticVibration(0.5f);
+            }
+        }
     }
 
     public void SetRotation()
