@@ -27,7 +27,7 @@ MonoBehaviour:
   movingCollisionAvoidDst: 4
   alignWeight: 0.87
   avoidanceRadius: 2
-  cohesionWeight: 0.1
+  cohesionWeight: 1
   seperateWeight: 3
   maxSteerForce: 2.12
   targetWeight: 2.17

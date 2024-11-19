@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 177342216880896642}
-  - component: {fileID: 3017183379864463868}
   - component: {fileID: 7571379077739077410}
+  - component: {fileID: 8021842957127418421}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: Untagged
@@ -34,49 +34,6 @@ Transform:
   - {fileID: 3803137429058007970}
   m_Father: {fileID: 3086090606488410122}
   m_LocalEulerAnglesHint: {x: 0, y: -14.668, z: 0}
---- !u!114 &3017183379864463868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658671117391145394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fe36a2fbacf14e409697a6d3bf7dfd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasbeenchecked: 0
-  TriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6123579037607675546}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  TriggerExitEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6123579037607675546}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &7571379077739077410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -98,6 +55,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 95.33832, y: 17.342533, z: 7.2977657}
   m_Center: {x: -22.74677, y: 8.171225, z: 9.460151}
+--- !u!114 &8021842957127418421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658671117391145394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d724ad2c71f369648aee91558fa8396e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasbeenchecked: 0
+  TriggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  UIPrefab: {fileID: 6233384435838201072, guid: 356a95133da8f474bba637d11ef93f18, type: 3}
 --- !u!1 &3183398628847752105
 GameObject:
   m_ObjectHideFlags: 0
