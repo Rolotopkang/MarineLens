@@ -388,6 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 6233384435838201072}
   distanceFromPlayer: 2
+  SmoothTime: 0.1
 --- !u!1 &5402326766791023594
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,7 +639,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -5400215600421433881, guid: ea9500ae32862c949b420c59682d02ed, type: 3}
+    m_Reference: {fileID: 4235571679551039572, guid: ea9500ae32862c949b420c59682d02ed, type: 3}
 --- !u!1 &7379705460504104675
 GameObject:
   m_ObjectHideFlags: 0

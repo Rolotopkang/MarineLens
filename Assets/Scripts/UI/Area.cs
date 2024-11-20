@@ -19,7 +19,7 @@ public class Area : MonoBehaviour
         }
         else
         {
-            _textMeshProUGUI.text = "No Current Area";
+            _textMeshProUGUI.text = "Not in the clean Area";
         }
     }
 }
