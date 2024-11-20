@@ -125,7 +125,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _PanningSpeed: 0.517
+    - _PanningSpeed: 0.574
     - _PanningSpeed1: 1
     - _Parallax: 0.02
     - _QueueControl: 0
@@ -144,13 +144,13 @@ Material:
     - _UVSec: 0
     - _WindDirection1: 1.24
     - _WindEffect: 2
-    - _WindNoiseScale: 0.367
+    - _WindNoiseScale: 1
     - _WindNoiseScale1: 0.662
     - _WindWorldScale: 0.02
     - _WindWorldScale1: 2.47
-    - _X_Multiplier: 0.137
+    - _X_Multiplier: 0
     - _Y_Multi: 0
-    - _Y_Multiplier: 0.312
+    - _Y_Multiplier: 0.5
     - _ZWrite: 1
     - _Z_Multiplier: 0
     - __dirty: 0
@@ -159,7 +159,7 @@ Material:
     - _emissive1: 0.435
     - _fresnel: 0.15
     - _lightDirMulti: 0.36
-    - _lightMax: 1
+    - _lightMax: 0
     - _lightMin: 0.463
     - _lightingContrast: 121.99
     - _maxEmit: 0.682
@@ -179,7 +179,7 @@ Material:
     - _Colour1: {r: 0.5, g: 0.5, b: 0.5, a: 0}
     - _Colour2: {r: 0.681, g: 0.8245501, b: 1, a: 0}
     - _EmissionColor: {r: 0.092, g: 0.092, b: 0.092, a: 1}
-    - _EmissiveColour: {r: 0.43543077, g: 0.7004826, b: 0.9716981, a: 0}
+    - _EmissiveColour: {r: 0, g: 0, b: 0, a: 0}
     - _GustSmoothing1: {r: 1, g: 1, b: 1, a: 0}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0}
     - _Translucency: {r: 0.5, g: 0.5, b: 0.5, a: 0}

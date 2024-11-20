@@ -63,7 +63,7 @@ public class WaterArea : MonoBehaviour
 
     public UnityEvent EndCleanEvent;
 
-    private BoxCollider myCollider;
+    private BoxCollider[] myCollider;
     private Camera currentCamera;
     private int CleanedCount = 0;
     private bool isChanging = false;
@@ -72,7 +72,7 @@ public class WaterArea : MonoBehaviour
     
     private void Start()
     {
-        myCollider = GetComponent<BoxCollider>();
+        myCollider = GetComponents<BoxCollider>();
         AreaManager.GetInstance().activeRegions.Add(this);
         currentCamera = Camera.main;
         BaseColor = InitBaseColor;
@@ -117,19 +117,18 @@ public class WaterArea : MonoBehaviour
         
         if (currentCamera)
         {
-            Bounds extendedBounds = myCollider.bounds;
-            extendedBounds.Expand(blendDistance * 2);
-            
-            if (extendedBounds.Contains(currentCamera.transform.position))
+            isPlayerIn = false;
+            foreach (BoxCollider extendedBounds in myCollider)
             {
-                isPlayerIn = true;
+                isCurrentArea = extendedBounds.bounds. Contains(currentCamera.transform.position);
+                Bounds tmpBounds = extendedBounds.bounds;
+                // tmpBounds.Expand(blendDistance * 2);
+                if (tmpBounds. Contains(currentCamera.transform.position))
+                {
+                    isPlayerIn = true;
+                    break;
+                }
             }
-            else
-            {
-                isPlayerIn = false;
-            }
-
-            isCurrentArea = myCollider.bounds.Contains(currentCamera.transform.position);
         }
     }
 

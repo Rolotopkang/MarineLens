@@ -9,7 +9,8 @@ public class UI_Tutorial : MonoBehaviour
     public GameObject Slot;
     public List<UI_Sentence> list = new List<UI_Sentence>(); 
     public int CurrentPage = 0;
-    
+
+
     private void Start()
     {
         foreach (UI_Sentence sentence in list)
@@ -17,8 +18,13 @@ public class UI_Tutorial : MonoBehaviour
             sentence.gameObject.SetActive(false);
         }
         list[CurrentPage].gameObject.SetActive(true);
-        list[CurrentPage].Trigger();
+        list[CurrentPage].Trigger();x   
         CurrentPage++;
+    }
+
+    private void OnEnable()
+    {
+
     }
 
     public void NextPage()

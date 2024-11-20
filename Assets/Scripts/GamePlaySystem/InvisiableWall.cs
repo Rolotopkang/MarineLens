@@ -8,7 +8,12 @@ public class InvisiableWall : MonoBehaviour
     public float tmp_coolDown;
     public float coolDown = 5f;
     public bool inCoolDown = false;
-    
+
+    private void Start()
+    {
+        GetComponent<MeshRenderer>().enabled = false;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
