@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3913440009098274539}
   m_Layer: 0
   m_Name: Trash_Fork_Final(Smoothed)
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

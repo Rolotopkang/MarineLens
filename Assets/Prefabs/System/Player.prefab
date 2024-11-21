@@ -14650,7 +14650,7 @@ MonoBehaviour:
   maxStepAngle: 45
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 513
   groundedDrag: 10000
   flyingDrag: 4
   allowClimbing: 1
@@ -29336,6 +29336,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6115145485789064355}
     m_Modifications:
+    - target: {fileID: 323226944392114271, guid: b2fddc1b34444024086eecd71f6e1d18, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 965922775371524294, guid: b2fddc1b34444024086eecd71f6e1d18, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -29452,28 +29456,8 @@ PrefabInstance:
     - {fileID: 4505634569827802004, guid: b2fddc1b34444024086eecd71f6e1d18, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4420538933575475308, guid: b2fddc1b34444024086eecd71f6e1d18, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4067732347571324816}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2fddc1b34444024086eecd71f6e1d18, type: 3}
---- !u!1 &519084342359547305 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4420538933575475308, guid: b2fddc1b34444024086eecd71f6e1d18, type: 3}
-  m_PrefabInstance: {fileID: 4209951720018689477}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4067732347571324816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519084342359547305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 453525db9fab4b44bb53e20ea0fee3ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &6301547859605530127 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7863100972647259082, guid: b2fddc1b34444024086eecd71f6e1d18, type: 3}
