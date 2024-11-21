@@ -18,7 +18,7 @@ public class UI_Tutorial : MonoBehaviour
             sentence.gameObject.SetActive(false);
         }
         list[CurrentPage].gameObject.SetActive(true);
-        list[CurrentPage].Trigger();x   
+        list[CurrentPage].Trigger();
         CurrentPage++;
     }
 

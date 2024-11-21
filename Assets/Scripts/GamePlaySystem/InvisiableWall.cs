@@ -8,6 +8,8 @@ public class InvisiableWall : MonoBehaviour
     public float tmp_coolDown;
     public float coolDown = 5f;
     public bool inCoolDown = false;
+    public GameObject WarningUI;
+    private GameObject currentWarningUI;
 
     private void Start()
     {
@@ -60,6 +62,7 @@ public class InvisiableWall : MonoBehaviour
 
     private void DestoryWarningUI()
     {
+        
         
         
         
