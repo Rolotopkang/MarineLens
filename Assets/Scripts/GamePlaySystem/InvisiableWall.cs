@@ -45,8 +45,15 @@ public class InvisiableWall : MonoBehaviour
             }
         }
     }
-    
-    
+
+    public void DelSelf()
+    {
+        BoxCollider[] tmp_C = GetComponents<BoxCollider>();
+        foreach (BoxCollider boxCollider in tmp_C)
+        {
+            boxCollider.enabled = false;
+        }
+    }
 
     private void TriggerWarningUI()
     {
@@ -54,7 +61,7 @@ public class InvisiableWall : MonoBehaviour
         {
             inCoolDown = true;
             tmp_coolDown = coolDown;
-            
+            currentWarningUI = Instantiate(WarningUI);
             
             Debug.Log("开始倒计时");
         }
@@ -62,10 +69,7 @@ public class InvisiableWall : MonoBehaviour
 
     private void DestoryWarningUI()
     {
-        
-        
-        
-        
+        Destroy(currentWarningUI);
         Debug.Log("倒计时结束");
     }
     

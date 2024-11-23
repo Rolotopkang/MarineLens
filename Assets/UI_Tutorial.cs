@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class UI_Tutorial : MonoBehaviour
 {
     public GameObject Slot;
     public List<UI_Sentence> list = new List<UI_Sentence>(); 
     public int CurrentPage = 0;
+    public UnityEvent EndEvent;
 
 
     private void Start()
@@ -46,6 +48,10 @@ public class UI_Tutorial : MonoBehaviour
 
     public void EndUi()
     {
+        if (EndEvent!=null)
+        {
+            EndEvent.Invoke();
+        }
         Destroy(gameObject);
     }
     
