@@ -10,10 +10,11 @@ public class Playerspeed : MonoBehaviour
     private void Start()
     {
         _slider = GetComponent<Slider>();
+        _slider.onValueChanged.AddListener(ChangeSpeed);
     }
-
-    private void Update()
+    
+    private void ChangeSpeed(float value)
     {
-        playerManager.GetInstance().ChangeSpeed(_slider.value);
+        playerManager.GetInstance().ChangeSpeed(value);
     }
 }

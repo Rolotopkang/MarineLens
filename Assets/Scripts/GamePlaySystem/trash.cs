@@ -21,6 +21,12 @@ public class trash : MonoBehaviour
         _outline = GetComponent<Outline>();
         _outline.enabled = false;
         transform.localScale *= Random.Range(MinSize, MaxSize);
+        Vector3 randomEulerAngles = new Vector3(
+            Random.Range(0f, 360f),
+            Random.Range(0f, 360f),
+            Random.Range(0f, 360f)
+        );
+        transform.eulerAngles = randomEulerAngles;
         //TODO 增加声音Event 
     }
 

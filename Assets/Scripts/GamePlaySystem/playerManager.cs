@@ -15,7 +15,14 @@ public class playerManager : Singleton<playerManager>
 
     public void FreezePlayer(bool set)
     {
-        AutoHandPlayer.useMovement = set;
+        if (!set)
+        {
+            AutoHandPlayer.maxMoveSpeed = 0;
+        }
+        else
+        {
+            AutoHandPlayer.maxMoveSpeed = 7.5f;
+        }
     }
     
     

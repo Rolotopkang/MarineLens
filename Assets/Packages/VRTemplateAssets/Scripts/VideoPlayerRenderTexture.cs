@@ -35,6 +35,7 @@ namespace Unity.VRTemplate
             material.mainTexture = renderTexture;
             GetComponent<VideoPlayer>().targetTexture = renderTexture;
             m_Renderer.material = material;
+            m_Renderer.material.renderQueue = 5000;
         }
     }
 }

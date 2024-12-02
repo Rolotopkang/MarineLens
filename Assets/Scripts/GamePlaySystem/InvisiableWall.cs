@@ -9,8 +9,13 @@ public class InvisiableWall : MonoBehaviour
     public float coolDown = 5f;
     public bool inCoolDown = false;
     public GameObject WarningUI;
-    private GameObject currentwarningUI;
-    
+    private GameObject currentWarningUI;
+
+    private void Start()
+    {
+        GetComponent<MeshRenderer>().enabled = false;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -40,8 +45,15 @@ public class InvisiableWall : MonoBehaviour
             }
         }
     }
-    
-    
+
+    public void DelSelf()
+    {
+        BoxCollider[] tmp_C = GetComponents<BoxCollider>();
+        foreach (BoxCollider boxCollider in tmp_C)
+        {
+            boxCollider.enabled = false;
+        }
+    }
 
     private void TriggerWarningUI()
     {
@@ -49,21 +61,13 @@ public class InvisiableWall : MonoBehaviour
         {
             inCoolDown = true;
             tmp_coolDown = coolDown;
-            currentwarningUI = Instantiate(WarningUI);
-            Debug.Log("开始倒计时");
+            currentWarningUI = Instantiate(WarningUI);
         }
     }
 
     private void DestoryWarningUI()
     {
-        if (currentwarningUI != null) 
-        {
-            Destroy(currentwarningUI); 
-            currentwarningUI = null;  
-        }
-
-
-        Debug.Log("倒计时结束");
+        Destroy(currentWarningUI);
     }
     
     

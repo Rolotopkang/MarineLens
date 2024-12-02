@@ -1,5 +1,6 @@
 
 using StylizedWater2.UnderwaterRendering;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
@@ -62,17 +63,23 @@ public class WaterArea : MonoBehaviour
     public bool hasBeenCleaned;
 
     public UnityEvent EndCleanEvent;
+    
+    public UnityEvent OnEnterWaterArea;
+    public UnityEvent OnExitWaterArea;
 
-    private BoxCollider myCollider;
+    private BoxCollider[] myCollider;
     private Camera currentCamera;
     private int CleanedCount = 0;
     private bool isChanging = false;
     private UnderwaterSettings _underwaterSettings;
     private Volume _volume;
+    private GameObject expandedTrigger;
+    public int TriggerCurrentAreaNum;
+    public int TriggerPlayerInNum;
     
     private void Start()
     {
-        myCollider = GetComponent<BoxCollider>();
+        myCollider = GetComponents<BoxCollider>();
         AreaManager.GetInstance().activeRegions.Add(this);
         currentCamera = Camera.main;
         BaseColor = InitBaseColor;
@@ -88,11 +95,43 @@ public class WaterArea : MonoBehaviour
             _underwaterSettings.heightFogDepth.value = InitHeightFogDepth;
             _underwaterSettings.heightFogDensity.value = InitHeightFogDensity;
         }
-        
+        InitializeExpandedTrigger();
     }
+    
+    private void InitializeExpandedTrigger()
+    {
+        var originalColliders = GetComponents<BoxCollider>(); // 获取所有 BoxCollider
+
+        foreach (var originalCollider in originalColliders)
+        {
+            // 为每个 BoxCollider 创建一个扩展触发器
+            var expandedTrigger = new GameObject($"ExpandedTrigger_{originalCollider.name}");
+            expandedTrigger.transform.SetParent(transform);
+            expandedTrigger.transform.localPosition = Vector3.zero;
+
+            expandedTrigger.layer = gameObject.layer;
+
+            var collider = expandedTrigger.AddComponent<BoxCollider>();
+            collider.isTrigger = true;
+
+            // 设置扩展的中心和大小
+            collider.center = originalCollider.center;
+            collider.size = originalCollider.size + Vector3.one * blendDistance * 2;
+            
+            // 添加扩展触发脚本
+            var triggerScript = expandedTrigger.AddComponent<ExpandedTrigger>();
+            triggerScript.OnPlayerEnter = () => { TriggerPlayerInNum++; OnEnterWaterArea?.Invoke(); };
+            triggerScript.OnPlayerExit = () => { TriggerPlayerInNum--; OnExitWaterArea?.Invoke(); };
+        }
+    }
+
+
+
     
     private void Update()
     {
+        UpdateAreaCheck();
+        
         if (isChanging)
         {
             CleanPersentage = Mathf.Lerp(CleanPersentage, (float)CleanedCount/Trashes.Length, ChangeSpeed * Time.deltaTime);
@@ -114,25 +153,13 @@ public class WaterArea : MonoBehaviour
         ShallowColor = Color.Lerp(InitShallowColor, TargetShallowColor, colorChangeCurve.Evaluate(CleanPersentage));
 
         UpdateVolume();
-        
-        if (currentCamera)
-        {
-            Bounds extendedBounds = myCollider.bounds;
-            extendedBounds.Expand(blendDistance * 2);
-            
-            if (extendedBounds.Contains(currentCamera.transform.position))
-            {
-                isPlayerIn = true;
-            }
-            else
-            {
-                isPlayerIn = false;
-            }
-
-            isCurrentArea = myCollider.bounds.Contains(currentCamera.transform.position);
-        }
     }
 
+    private void UpdateAreaCheck()
+    {
+        isCurrentArea = TriggerCurrentAreaNum >= 1;
+        isPlayerIn = TriggerPlayerInNum >= 1;
+    }
 
     private void UpdateVolume()
     {
@@ -158,6 +185,37 @@ public class WaterArea : MonoBehaviour
             isChanging = true;
         }
     }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isCurrentArea = true;
+            TriggerCurrentAreaNum++;
+        }
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            TriggerCurrentAreaNum--;
+        }
+    }
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue; // 蓝色表示原始区域
+        var colliders = GetComponents<BoxCollider>();
+        if (colliders.Length > 0)
+        {
+            foreach (var collider in colliders)
+            {
+                Gizmos.matrix = collider.transform.localToWorldMatrix; // 确保Gizmo位置与对象对齐
+                Gizmos.DrawWireCube(collider.center, collider.size);
+            }
+        }
+    }
+    
     public float GetCleanCount => CleanedCount;
 }

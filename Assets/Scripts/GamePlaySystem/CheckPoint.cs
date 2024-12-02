@@ -10,6 +10,7 @@ public class CheckPoint : MonoBehaviour
     public UnityEvent TriggerEnterEvent;
     public Action Triggeraction;
     public UnityEvent TriggerExitEvent;
+    public UnityEvent OnUIEnd;
 
     private void OnTriggerEnter(Collider other)
     {

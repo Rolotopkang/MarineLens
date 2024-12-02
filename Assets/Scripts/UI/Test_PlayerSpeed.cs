@@ -14,6 +14,6 @@ public class Test_PlayerSpeed : MonoBehaviour
 
     private void Update()
     {
-        playerManager.GetInstance().ChangeSpeed(_slider.value);
+        // playerManager.GetInstance().ChangeSpeed(_slider.value);
     }
 }

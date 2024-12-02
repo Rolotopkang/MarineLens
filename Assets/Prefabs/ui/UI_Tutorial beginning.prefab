@@ -1146,6 +1146,9 @@ MonoBehaviour:
   - {fileID: 2596027167739174025}
   - {fileID: 8301798741162745133}
   CurrentPage: 0
+  EndEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2250769092769958163
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,7 +2137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -99, y: 0}
+  m_AnchoredPosition: {x: 140, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6343233630801247537

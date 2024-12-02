@@ -14,6 +14,7 @@ public class CheckPoint1 : CheckPoint
 
     private void InstantUI()
     {
-        Instantiate(UIPrefab, Vector3.zero, quaternion.identity);
+        GameObject go = Instantiate(UIPrefab, Vector3.zero, quaternion.identity);
+        go.GetComponent<UI_Tutorial>().EndEvent = OnUIEnd;
     }
 }
