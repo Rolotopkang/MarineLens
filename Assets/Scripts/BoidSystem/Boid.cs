@@ -89,7 +89,7 @@ public class Boid : MonoBehaviour {
         if (IsHeadingForMovingCollision())
         {
             panic = true;
-            _outline.enabled = true;
+            // _outline.enabled = true;
             if (panicRecover != null)
             {
                 StopCoroutine(panicRecover);
@@ -169,7 +169,7 @@ public class Boid : MonoBehaviour {
         yield return new WaitForSeconds(settings.panicTime);
         panic = false;
         panicRecover = null;
-        _outline.enabled = false;
+        // _outline.enabled = false;
     }
 
     Vector3 SteerTowards (Vector3 vector) {

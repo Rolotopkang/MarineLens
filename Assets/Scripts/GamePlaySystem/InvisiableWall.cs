@@ -62,15 +62,12 @@ public class InvisiableWall : MonoBehaviour
             inCoolDown = true;
             tmp_coolDown = coolDown;
             currentWarningUI = Instantiate(WarningUI);
-            
-            Debug.Log("开始倒计时");
         }
     }
 
     private void DestoryWarningUI()
     {
         Destroy(currentWarningUI);
-        Debug.Log("倒计时结束");
     }
     
     

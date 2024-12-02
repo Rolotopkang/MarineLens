@@ -10,7 +10,6 @@ public class UI_Sentence : MonoBehaviour
 
     public void Trigger()
     {
-        Debug.Log("播放");
         AudioManager.GetInstance().PlaySound(Clip,_uiTutorial.gameObject.transform.position,false,50,  ()=>_uiTutorial.NextPage());
     }
 

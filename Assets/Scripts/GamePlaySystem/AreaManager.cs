@@ -55,7 +55,6 @@ public class AreaManager : Singleton<AreaManager>
             BoxCollider boxCollider = region.GetComponent<BoxCollider>();
             if (boxCollider == null) continue;
             if (!region.isPlayerIn) { continue; }
-            
             float distance = Vector3.Distance(currentCamera.transform.position, boxCollider.ClosestPoint(currentCamera.transform.position));
             float blendFactor = Mathf.Clamp01(1 - (distance / region.blendDistance));
 
