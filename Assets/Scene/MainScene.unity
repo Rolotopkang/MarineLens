@@ -10067,6 +10067,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7917771080835034591, guid: fe526b8b00652524da1e6726f8f94a31, type: 3}
   m_PrefabInstance: {fileID: 553916847}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &557241105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: defe3efb56c1bc943a6bfb504a00dc77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  startDistance:
+    m_OverrideState: 1
+    m_Value: 10
+  fogDensity:
+    m_OverrideState: 1
+    m_Value: 5
+  heightFogDepth:
+    m_OverrideState: 1
+    m_Value: 15
+  heightFogDensity:
+    m_OverrideState: 1
+    m_Value: 10
+  heightFogBrightness:
+    m_OverrideState: 1
+    m_Value: 0.5
+  fogBrightness:
+    m_OverrideState: 1
+    m_Value: 0.5
+  subsurfaceStrength:
+    m_OverrideState: 1
+    m_Value: 0.1
+  causticsStrength:
+    m_OverrideState: 1
+    m_Value: 1
+  distortionStrength:
+    m_OverrideState: 1
+    m_Value: 0.16
+  distortionFrequency:
+    m_OverrideState: 1
+    m_Value: 0.75
+  distortionSpeed:
+    m_OverrideState: 1
+    m_Value: 0.3
 --- !u!4 &557601635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3256098864588638496, guid: a5f3a276487fdcc41b7324bbaaa963a5, type: 3}
@@ -31266,7 +31312,7 @@ MonoBehaviour:
   waterLevelPadding: 0.5
   waterMaterial: {fileID: 2100000, guid: d53e2a245a2e389439504202541600e4, type: 2}
   dynamicMaterial: 1
-  settings: {fileID: 2028402273}
+  settings: {fileID: 557241105}
   useVolumeBlending: 1
   startDistance: 15
   fogDensity: 20
@@ -38188,52 +38234,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7319729116175544271, guid: be278adc221ca844abf78feb3bbd77fb, type: 3}
   m_PrefabInstance: {fileID: 1126309712}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2028402273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: defe3efb56c1bc943a6bfb504a00dc77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  startDistance:
-    m_OverrideState: 0
-    m_Value: 0
-  fogDensity:
-    m_OverrideState: 0
-    m_Value: 20
-  heightFogDepth:
-    m_OverrideState: 0
-    m_Value: 25
-  heightFogDensity:
-    m_OverrideState: 0
-    m_Value: 1
-  heightFogBrightness:
-    m_OverrideState: 0
-    m_Value: 0.6
-  fogBrightness:
-    m_OverrideState: 0
-    m_Value: 1
-  subsurfaceStrength:
-    m_OverrideState: 0
-    m_Value: 0.35
-  causticsStrength:
-    m_OverrideState: 0
-    m_Value: 1
-  distortionStrength:
-    m_OverrideState: 0
-    m_Value: 0.25
-  distortionFrequency:
-    m_OverrideState: 0
-    m_Value: 0.75
-  distortionSpeed:
-    m_OverrideState: 0
-    m_Value: 0.5
 --- !u!1001 &2028761591
 PrefabInstance:
   m_ObjectHideFlags: 0
